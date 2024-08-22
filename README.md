@@ -45,7 +45,7 @@ VLESS-Reality маскирует ваш трафик под трафик Whatsap
 این مخزن به شما این امکان را می دهد که به سرعت VLESS+Reality و VLESS-WS را در VPS خود مستقر کنید.         
 شما به یک VPS با نام دامنه نیاز دارید. نام دامنه باید به یک CDN پیوند داده شود (من توصیه می کنم از Cloudflare استفاده کنید)      
 VLESS-Reality ترافیک شما را به عنوان ترافیک Whatsapp و VLESS-WS به عنوان ترافیک وب سایت جعلی شما (index.html) پنهان می کند.      
-اگر دامنه ای ندارید که به Cloudflare پیوند داده شده باشد، و همچنین تمایل یا فرصتی برای دریافت آن ندارید، توصیه می کنم از اسکریپتی استفاده کنید که VLESS + Reality را از [این مخزن] افزایش می دهد (https://github.com/one- loner/XRAY-VLESS-Reality_one -click-deploy)      
+اگر دامنه ای ندارید که به Cloudflare پیوند داده شده باشد، و همچنین تمایل یا فرصتی برای دریافت آن ندارید، توصیه می کنم از اسکریپتی استفاده کنید که VLESS + Reality را از [این مخزن](https://github.com/one-loner/XRAY-VLESS-Reality_one-click-deploy)            
 هر دو سرویس روی پورت 443 اجرا می شوند. اسکریپت سرور را پیکربندی می کند و همچنین لینک ها و کدهای QR را برای مشتریان ایجاد می کند.     
 نکته مهم: اسکریپت فایل های پیکربندی اصلی را تغییر می دهد، نسخه های اصلی آنها با وضوح اصلی ذخیره می شود.     
 اگر کانتینر را دوباره نصب کردید، Caddyfile config.json haproxy.cf را ​​حذف کنید، و همچنین نام فایل‌های با پسوند .original را تغییر دهید و این پسوند حذف شود.    
@@ -64,7 +64,7 @@ VLESS-Reality ترافیک شما را به عنوان ترافیک Whatsapp و 
 Bu ammar size VLESS + Reality we VLESS-WS-ni çalt ýerleşdirmäge mümkinçilik berer.    
 Size domen ady bolan VPS gerek bolar. Domen ady CDN bilen baglanyşykly bolmaly (Cloudflare ulanmagy maslahat berýärin)      
 VLESS-Reality traffigiňizi Whatsapp traffigi, VLESS-WS bolsa ýasama web sahypaňyza traffik hökmünde görkezýär (index.html)      
-“Cloudflare” bilen baglanyşykly domeniňiz ýok bolsa, şeýle hem birini almak islegi ýa-da mümkinçiligi ýok bolsa, [bu ammardan] (https://github.com/one-) VLESS + Reality ýokarlandyrýan skripti ulanmagy maslahat berýärin. ýalňyz / XRAY-VLESS-Reality_one-basyň-ýerleşdiriň)     
+“Cloudflare” bilen baglanyşykly domeniňiz ýok bolsa, şeýle hem birini almak islegi ýa-da mümkinçiligi ýok bolsa, [bu ammardan](https://github.com/one-loner/XRAY-VLESS-Reality_one-click-deploy) VLESS + Reality ýokarlandyrýan skripti ulanmagy maslahat berýärin. ýalňyz / XRAY-VLESS-Reality_one-basyň-ýerleşdiriň)     
 Iki hyzmat hem 443-nji portda işleýär. Scriptazgy serweri düzýär we müşderiler üçin baglanyşyklar we QR kodlary döredýär.       
 Möhüm nokat: skript asyl konfigurasiýa faýllaryny üýtgedýär, asyl nusgalary .original durulykda saklanar      
 Konteýni täzeden gurnasaňyz, Caddyfile config.json haproxy.cf pozuň we bu giňeltmäni aýyryp, .original giňeltmesi bilen faýllaryň adyny üýtgediň.    
