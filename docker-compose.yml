@@ -1,0 +1,45 @@
+version: '2'
+
+volumes:
+  caddy_data:
+  caddy_config:
+  web_data:
+
+services:
+  xray:
+    image: teddysun/xray
+    volumes:
+      - ./config.json:/etc/xray/config.json
+
+  haproxy:
+    image: haproxy:latest
+    ports:
+      - 443:443
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    depends_on:
+      - caddy
+      - xray
+    links:
+      - caddy:caddy
+      - xray:xray
+
+  caddy:
+    image: caddy
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - web
+      - xray
+    links:
+      - web:web
+      - xray:xray
+    ports:
+      - 80:80
+
+  web:
+    image: nginx:latest
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
