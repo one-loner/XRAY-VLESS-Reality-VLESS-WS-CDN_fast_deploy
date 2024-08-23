@@ -15,9 +15,9 @@
         ]
     },
     "inbounds": [
-    {
+{
       "listen": "0.0.0.0",
-      "port": 2443,
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
@@ -38,19 +38,19 @@
         "enabled": true
       },
       "streamSettings": {
-       "network": "tcp",
+         "network": "tcp",
         "realitySettings": {
           "dest": "whatsapp.com:443",
           "maxClient": "",
           "maxTimediff": 0,
           "minClient": "",
-          "privateKey": "8DUxrzTO6QEUqpsT9A3lcy72HhzPDpK-uJ7N2wjqR2E",
+          "privateKey": "pprivkey",
           "serverNames": [
             "whatsapp.com",
             "web.whatsapp.com"
           ],
           "shortIds": [
-            "0ec74dd2"
+            "ssid"
           ],
           "show": false,
           "xver": 0
@@ -63,7 +63,7 @@
           }
         }
       },
-      "tag": "inbound-2443"
+      "tag": "inbound-443"
     } ,
         {
             "listen": "0.0.0.0",
