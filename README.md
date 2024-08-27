@@ -3,6 +3,7 @@
 This repository will allow you to quickly deploy VLESS+Reality and VLESS-WS on your VPS.     
 You will need a VPS with a domain name. The domain name must be linked to a CDN (I recommend using Cloudflare)     
 VLESS-Reality disguises your traffic as Whatsapp traffic, and VLESS-WS as traffic to your fake site (index.html)      
+   
       
 If you do not have a domain that is linked to Cloudflare, as well as the desire or ability to get it, I recommend using the script that raises VLESS + Reality from [this repository](https://github.com/one-loner/XRAY-VLESS-Reality_one-click-deploy)       
 Both services rise on port 443. The script configures the server, and also generates links and QR codes for clients.       
@@ -18,7 +19,10 @@ I recommend using a CDN in order to:
         
 If you do not have a domain name linked to the CDN, I recommend deploying the usual VLESS+Reality. You can find it in this repository.    
      
+UPD: Added a configure.sh script, thanks to which you can replace the resource for masking from whatsapp to another   
+   
 Installation:     
+- Run the ./configure.sh script if you need to replace the resource for masking from whatsapp to another     
 - Run the ./install.sh script as root.     
 - After the request from the installation script, enter your domain name, which is linked to the CDN - Wait for the installation to complete and load the generated links into your client for VLESS     
      
@@ -36,7 +40,10 @@ VLESS-Reality маскирует ваш трафик под трафик Whatsap
    
 Если у вас нет доменного имени, прилинкованного к CDN, я рекомендую разворачивать обычный VLESS+Reality. Его вы можетенайти в данном репозитории.   
    
+UPD: Добавил скрипт configure.sh, благодаря которому вы можете заменить ресурс для маскировки с whatsapp на другой     
+   
 Установка:    
+ -  Запустить скрипт ./configure.sh, если вам нужно заменить ресурс для маскировки с whatsapp на другой
  -  Запустить скрипт ./install.sh от root.   
  -  После запроса от установочного скрипта, ввести ваше доменное имя, которое прилинковано к CDN    
  -  Дождаться окончания установки и подгрузить сгенерированные ссылки в ваш клиент для VLESS    
@@ -54,8 +61,10 @@ VLESS-Reality ترافیک شما را به عنوان ترافیک Whatsapp و 
  - اگر VPS شما توسط آدرس IP مسدود شده باشد، ارسال از طریق CND نیز مفید خواهد بود.      
        
 اگر نام دامنه مرتبط با CDN ندارید، توصیه می‌کنم VLESS+Reality معمولی را نصب کنید. می توانید آن را در این مخزن پیدا کنید.     
+UPD: اسکریپت configure.sh را اضافه کرد که به لطف آن می توانید منبع ماسک کردن را از whatsapp به دیگری جایگزین کنید.    
      
 نصب و راه اندازی:     
+ - اگر نیاز به جایگزینی منبع پوشاننده از whatsapp به دیگری دارید، اسکریپت ./configure.sh را اجرا کنید.    
  - اسکریپت ./install.sh را به صورت روت اجرا کنید.     
  - پس از درخواست از اسکریپت نصب، نام دامنه خود را که به CDN لینک شده است وارد کنید     
  - منتظر بمانید تا نصب کامل شود و لینک های تولید شده را در کلاینت خود برای VLESS بارگذاری کنید     
@@ -74,7 +83,9 @@ CDN ulanmagy maslahat berýärin:
      
 CDN bilen baglanyşdyrylan domen adyňyz ýok bolsa, yzygiderli VLESS + Reality ýerleşdirmegi maslahat berýärin. Bu ammarda tapyp bilersiňiz.     
      
+UPD: konfigurasiýa.sh skriptini goşdy, munuň netijesinde whatsapp-dan başga birine maskalanmak üçin çeşmäni çalşyp bilersiňiz     
 Gurnama:      
+ - Maska çeşmesini whatsapp-dan başga birine çalyşmaly bolsaňyz ./configure.sh skriptini işlediň      
  - ./install.sh skriptini kök hökmünde işlediň.      
  - Gurmak skriptinden haýyşdan soň, CDN bilen baglanyşykly domen adyňyzy giriziň     
  - Gurluşyň tamamlanmagyna we döredilen baglanyşyklary VLESS üçin müşderiňize ýükläň     
